@@ -31,7 +31,7 @@ app.use(rateLimiter);
 //   next();
 // });
 
-app.use("/api/notes", notesRoutes);
+app.use("/api/notes", notesroutes);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontalend/dist")));
